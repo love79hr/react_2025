@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// setting 연결
+@import "./setting/fonts";
+@import "./setting/mixin";
+@import "./setting/reset";
+@import "./setting/vars";
+
+// section 연결
+@import "./section/skip";
+@import "./section/header";
