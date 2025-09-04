@@ -1,0 +1,149 @@
+
+#site{}
+.site_inner{
+  padding: 16px;
+
+  .site_title{
+
+    @media(max-width:800px){
+      font-size: 30px;
+      height: auto;
+    }
+
+    position: sticky;
+    top: 90px;
+    left: 0;
+
+    width: 70%;
+    height: 5vw;
+    background-color: var(--mainBg-color);
+    font-size: 3vw;
+    font-family: var(--mainNum-font);
+    font-weight: 800;
+    text-transform: uppercase;
+
+    em{
+      font-size: 1.25rem;
+    }
+  }
+  .site_wrap{
+
+    .site_item{
+      // 박스 고정
+      width: 100%;
+      height: 70vh;
+      position: sticky;
+      left: 0;
+
+      // 요소 정렬
+      @include flex-center;
+      flex-direction: column;
+
+
+      &.s1{
+        background-color: var(--subBg100);
+        top: 180px;
+      }
+      &.s2{
+        background-color: var(--subBg200);
+        top: 210px;
+      }
+      &.s3{
+        background-color: var(--subBg300);
+        top: 240px;
+      }
+      &.s4{
+        background-color: var(--subBg400);
+        top: 270px;
+      }
+      &.s5{
+        background-color: var(--subBg500);
+        top: 300px;
+      }
+      &.s6{
+        background-color: var(--subBg100);
+        top: 330px;
+      }
+
+      .num{
+        font-size: 5vw;
+        font-weight: 800;
+        line-height: 1.3;
+        font-family: var(--mainNum-font);
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+
+        @media(max-width:800px){
+          font-size: 30px;
+          height: auto;
+          top: 20px;
+          eft: 20px;
+        }
+      }
+      .text{
+        margin-bottom: 20px;
+
+        > div{
+          font-size: 3vw;
+          font-weight: 600;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 1.3;
+          text-decoration: underline;
+
+          @media(max-width:800px){
+            font-size: 30px;
+          }
+        }
+      }
+      h3.tltle{
+        font-family: var(--mainNum-font);
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover{
+          color: var(--white);
+          text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+        }
+      }
+      .btn{        
+
+        a{
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 5px 10px;
+          transition: all 0.3s;
+
+          &:hover{
+            color: var(--white);
+            font-weight: 600;
+          }
+        }
+      }
+      .info{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+        border-top: 1px solid var(--black);
+        border-bottom: 1px solid var(--black);
+
+        span{
+          font-family: var(--mainKor-font);
+          font-weight: 14;
+          padding: 3px 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    
+  }
+}
