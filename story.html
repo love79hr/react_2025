@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>haru_e | Brand story</title>
+
+  <link rel="stylesheet" href="./css/setting/reset.css"> <!-- 리셋 링크 -->
+  <link rel="stylesheet" href="./css/setting/font.css"> <!-- 폰트 링크 -->
+  <link rel="stylesheet" href="./css/setting/vars.css"> <!-- 변수 링크 -->
+  <link rel="stylesheet" href="./css/setting/all.min.css"> <!-- 폰트어썸 CDN 링크 -->
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css">
+  <!-- 나눔스퀘어 네오 폰트 링크 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- 스와이퍼 링크 -->
+
+  <link rel="stylesheet" href="./css/style/story.css"> <!-- 스타일 링크 -->
+  <link rel="stylesheet" href="./css/media/story_m.css"> <!-- 미디어 링크 -->
+
+</head>
+
+<body>
+  <header id="top">
+    <header class="top">
+      <div class="top_title">
+        <strong class="welcome">Welcome to Haru.e shop!</strong>
+      </div> <!-- // .top_title -->
+    </header> <!-- // .top -->
+  </header> <!-- // #top -->
+  
+  <header id="header">
+    <div class="header">
+      <div class="nav">
+        <div class="bar_menu">
+          <a href="javascript:;"><i class="fa-solid fa-bars"></i></a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./story.html" target="_blank">Brand story</a></li>
+              <li><a href="./shop.html" target="_blank">Shop</a></li>
+              <li><a href="./event.html" target="_blank">Event</a></li>
+              <li><a href="./review.html" target="_blank">Review</a></li>
+            </ul>
+          </div>
+        </div> <!-- // bar -->
+      </div> <!-- // nav -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="https://github.com/love79hr/haru_e/blob/main/images/main_logo.png?raw=true" alt="logo">
+        </a>
+      </div> <!-- // logo -->
+      <div class="user">
+        <ul>
+          <li class="search">
+            <a href="javascript:;" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="search_popup">
+              <div class="search_container">
+                <div class="search_header">
+                  <h3>SEARCH</h3>
+                  <button class="close_btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="search_input_area">
+                  <input type="text" placeholder="찾고 싶은 상품을 검색해보세요" class="search_input">
+                  <button class="search_submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="search_suggestions">
+                  <h4>인기 검색어</h4>
+                  <ul>
+                    <li><a href="javascript:;">무드등</a></li>
+                    <li><a href="javascript:;">캔들</a></li>
+                    <li><a href="javascript:;">쿠션</a></li>
+                    <li><a href="javascript:;">드라이플라워</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="login">
+            <a href="javascript:;" class="login_btn"><i class="fa-solid fa-user"></i></a>
+            <div class="login_popup">
+              <div class="login_container">
+                <div class="login_header">
+                  <h3>LOGIN</h3>
+                  <button class="close_btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="login_form">
+                  <div class="input_group">
+                    <label for="login_id">아이디</label>
+                    <input type="text" id="login_id" placeholder="아이디를 입력하세요" class="login_input">
+                  </div>
+                  <div class="input_group">
+                    <label for="login_pw">비밀번호</label>
+                    <input type="password" id="login_pw" placeholder="비밀번호를 입력하세요" class="login_input">
+                  </div>
+                  <div class="login_options">
+                    <label class="checkbox_label">
+                      <input type="checkbox" id="remember_login">
+                      <span>로그인 상태 유지</span>
+                    </label>
+                    <div class="login_links">
+                      <a href="javascript:;">아이디 찾기</a>
+                      <span>|</span>
+                      <a href="javascript:;">비밀번호 찾기</a>
+                    </div>
+                  </div>
+                  <button class="login_submit">로그인</button>
+                  <div class="signup_link">
+                    <p>아직 회원이 아니신가요? <a href="javascript:;">회원가입</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cart">
+            <a href="javascript:;" class="cart_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="cart_popup">
+              <div class="cart_container">
+                <div class="cart_header">
+                  <h3>CART</h3>
+                  <button class="close_btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="cart_content">
+                  <div class="cart_items">
+                    <div class="cart_item">
+                      <div class="item_img">
+                        <img src="https://github.com/love79hr/haru_e/blob/main/images/item_1.png?raw=true" alt="상품 이미지">
+                      </div>
+                      <div class="item_info">
+                        <h4>LED 버섯램프 무선 무드등 조명</h4>
+                        <p class="item_price">18,900원</p>
+                        <div class="quantity_control">
+                          <button class="qty_btn minus">-</button>
+                          <span class="quantity">1</span>
+                          <button class="qty_btn plus">+</button>
+                        </div>
+                      </div>
+                      <button class="remove_item"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="cart_item">
+                      <div class="item_img">
+                        <img src="https://github.com/love79hr/haru_e/blob/main/images/item_2.png?raw=true" alt="상품 이미지">
+                      </div>
+                      <div class="item_info">
+                        <h4>아로마 캔들 세트 (3개)</h4>
+                        <p class="item_price">24,900원</p>
+                        <div class="quantity_control">
+                          <button class="qty_btn minus">-</button>
+                          <span class="quantity">2</span>
+                          <button class="qty_btn plus">+</button>
+                        </div>
+                      </div>
+                      <button class="remove_item"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                  </div>
+                  <div class="cart_summary">
+                    <div class="total_price">
+                      <span>총 상품금액</span>
+                      <span class="total_amount">68,700원</span>
+                    </div>
+                    <button class="checkout_btn">주문하기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> <!-- // user -->
+    </div> <!-- // header -->
+  </header>
+
+  <main id="main">
+    <!-- Story Section -->
+    <section id="story">
+      <div class="story">
+
+        <!-- Brand Story Area (Left) -->
+        <div class="brand_story_area">
+          <div class="story_content">
+            <h1 class="sub_title">Brand Story</h1>
+            <h2 class="story_title">"당신의 하루에 머무는 감성 한스푼"</h2>
+            <div class="story_text">
+              <p>“하루에(Haru.e)”라는 이름에는</p>
+              <p>당신의 일상 속 한 자리에 감성을 더하고 싶다는 마음을 담았습니다.</p>
+
+              <p>하루에는 화려하지 않아도,</p>
+              <p>곁에 오래 머물며 따뜻함을 전할 수 있는 소품을 만듭니다.</p>
+
+              <p>작지만 특별한 오브제가</p>
+              <p>당신의 공간을 채우고,</p>
+              <p>때론 위로가 되고,</p>
+              <p>때론 영감이 되어</p>
+              <p>지친 일상에서 조금 더 따스한 하루를 만들어주기를 바랍니다.</p>
+
+              <p>오늘도 당신의 하루에 머물며,</p>
+              <p>가장 가까운 곳에서 감성을 전하는 브랜드가 되겠습니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Story Photo Area (Right) -->
+        <div class="brand_story_photo_area">
+          <div class="story_image">
+            <img
+              src="https://github.com/love79hr/haru_e/blob/main/images/story_bg.png?raw=true"
+              alt="브랜드스토리 배경이미지">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value">
+      <div class="value">
+        <div class="value_content">
+          <h2 class="value_heading">Value / Philosophy</h2>
+          <div class="value_points">
+            <div class="value_point">
+              <h3>Warmth</h3>
+              <p>따뜻한 일상을 위한 디자인</p>
+            </div>
+            <div class="value_point">
+              <h3>Simplicity</h3>
+              <p>작지만 오래 남는 감각</p>
+            </div>
+            <div class="value_point">
+              <h3>Everyday</h3>
+              <p>언제나 곁에 두고 싶은 소품</p>
+            </div>
+          </div>
+          <div class="value_quote">
+            <p>"하루에는 작은 소품으로 당신의 공간을 더 따뜻하게 만듭니다."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer">
+          <div class="f_logo">
+            <a href="./index.html">
+              <img src="https://github.com/love79hr/haru_e/blob/main/images/footer_logo.png?raw=true" alt="footer_logo">
+            </a>
+            <p>'당신의 하루에 머무는 감성 한스푼'</p>
+            <span>© 2025 HARUE. All Rights Reserved.</span>
+          </div>
+          <div class="f_copy">
+            <h3>사업자 정보</h3>
+            <p>상호명 : 하루에</p>
+            <p>대표자 : 김혜란</p>
+            <p>사업자등록번호 : 000-00-00000</p>
+            <p>통신판매업 신고번호 : 제 2025-서울-0000호</p>
+            <p>주소 : 서울시 강서구 공항대로 000</p>
+            <span>e-mail : hello@harue.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 스크립트 링크 영역 -->
+  <script src="./js/script.js"></script> <!-- 스크립트 링크 -->
+</body>
+
+</html>
