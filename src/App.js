@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homview from './views/Homview';
 import Sub1 from './views/Sub1';
 import Sub2 from './views/Sub2';
+import Link from './views/Link';
 
 const App = () => {
+
+  useEffect(() => {
+    Link();
+  })
   return (
     <BrowserRouter>
       <Routes>
