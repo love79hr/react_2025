@@ -1,8 +1,7 @@
-
 #port{
   width: 100%;
   margin-top: 30vh;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .port_inner{
   padding: 16px;
@@ -10,17 +9,17 @@
   .port_title{
     width: 100%;
     height: 5vw;
-    font-size: 3vw;
-    font-family: var(--mainNum-font);
+    font-size: 4vw;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--black);
-    margin-bottom: 16px;
     font-weight: 800;
+    border-bottom: 0.4vw solid var(--black); 
+    margin-bottom: 16px;  
 
     em{
       font-size: 20px;
     }
   }
+
   .port_wrap{
     width: 3500px;
     display: flex;
@@ -30,60 +29,62 @@
       width: 500px;
       height: 70vh;
       padding: 20px;
-      margin-right: 20px;
+      margin-right: 20px; 
+      
 
-      &.p1{background-color: var(--subBg100);}
-      &.p2{background-color: var(--subBg200);}
+      &.p1{background-color: var(--subBg500);}
+      &.p2{background-color: var(--subBg400);}
       &.p3{background-color: var(--subBg300);}
-      &.p4{background-color: var(--subBg400);}
-      &.p5{background-color: var(--subBg500);}
-      &.p6{background-color: var(--subBg100);}
+      &.p4{background-color: var(--subBg200);}
+      &.p5{background-color: var(--subBg100);}
+      &.p6{background-color: var(--subBg500);}
 
-      span.num{
+      .num{
         font-size: 32px;
         font-family: var(--mainNum-font);
       }
       a.img{
         display: block;
         margin-top: -20px;
-        transition: margin-top 0.3s;
-
-        &:hover{
-          margin-top: 0;
-        }
+        transition: all 0.4s;
 
         img{
-          filter: saturate(0%);
+          filter: saturate(0);
+          transition: all 0.4s;
         }
         &:hover img{
           filter: saturate(100%);
         }
+
+        &:hover{
+          margin-top: 0;
+        }
       }
-      h3.title{
-        font-size: 24px;
+      .title{
+        font-size: 20px;
         font-family: var(--mainNum-font);
+        padding: 12px 0;
         text-align: center;
-        padding: 16px 0;
         border-bottom: 1px solid var(--black);
         margin-bottom: 16px;
       }
-      p.desc{
-        font-size: 18px;
+      .desc{
         text-align: justify;
       }
       a.site{
         display: block;
-        border: 1px solid var(--black);
-        text-align: center;
+        border: 1px solid var(--black300);
         padding: 8px 0;
-        margin-top: 20px;
-        transition: background-color 0.3s;
+        text-align: center;
+        margin-top: 25px;
+        transition: all 0.4s;
 
         &:hover{
-          background-color: rgba($color: #000000, $alpha: 0.5);
+          background-color: var(--black300);
           color: var(--white);
+          opacity: 0.7;
         }
-      }
+      }      
     }
   }
 }

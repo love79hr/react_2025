@@ -51,9 +51,7 @@ const Header = () => {
               <li key={key}>
                 <a href={nav.url}>{nav.title}</a>
               </li>
-            ))}
-
-            
+            ))}            
           </ul>
         </nav>
 
